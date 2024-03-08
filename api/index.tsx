@@ -80,7 +80,8 @@ app.frame('/submit', async (c) => {
   );
 
   return c.res({
-    image: userLiked ? html : '/likepls.png',
+    // image: userLiked ? html : '/likepls.png',
+    image: userLiked ? '/thankyou.png' : '/likepls.png',
     intents: userLiked ? [
       <Button.Link href="https://warpcast.com/ok">Ext Link 1</Button.Link>,
       <Button.Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Ext Link 2</Button.Link>,
